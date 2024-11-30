@@ -1,0 +1,6 @@
+@Kaya_HostAddress = http://localhost:5189
+
+GET {{Kaya_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
