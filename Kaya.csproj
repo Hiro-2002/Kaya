@@ -13,7 +13,6 @@
   <ItemGroup>
     <Folder Include="src\API\Controllers\" />
     <Folder Include="src\API\Middlewares\" />
-    <Folder Include="src\API\Models\" />
     <Folder Include="src\API\Services\" />
     <Folder Include="src\Application\DTOs\" />
     <Folder Include="src\Application\Interfaces\" />
