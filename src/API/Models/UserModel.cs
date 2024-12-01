@@ -28,9 +28,20 @@ namespace Kaya.src.API.Models
 
         [Required]
         public UserRole Role { get; set; } = UserRole.Customer;
+
         public DateTime? Birthday { get; set; }
         public string AvatarUrl { get; set; } = "";
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public DateTime LastUpdatedAt { get; set; } = DateTime.UtcNow;
+
+
+        public UserModel(string firstName, string lastName, string phone, string email, string hashedPassword)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+            Phone = phone;
+            Email = email;
+            HashedPassword = hashedPassword;
+        }
     }
 }
