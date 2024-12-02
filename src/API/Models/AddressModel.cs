@@ -10,10 +10,13 @@ namespace Kaya.src.API.Models
         [StringLength(200, ErrorMessage = "Street address cannot be longer than 200 characters.")]
         public string StreetAddress { get; set; }
 
+
+        // TODO: store city all names in a database or a configuration file.
         [Required]
         [StringLength(100, ErrorMessage = "City cannot be longer than 200 characters.")]
         public string City { get; set; }
 
+        // TODO: store city all names in a database or a configuration file.
         [Required]
         [StringLength(100, ErrorMessage = "Province cannot be longer than 100 characters.")]
         public string Province { get; set; }
