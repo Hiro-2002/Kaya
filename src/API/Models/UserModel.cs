@@ -31,9 +31,14 @@ namespace Kaya.src.API.Models
 
         public DateTime? Birthday { get; set; }
         public string AvatarUrl { get; set; } = "";
+
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public DateTime LastUpdatedAt { get; set; } = DateTime.UtcNow;
 
+        public ICollection<UserRole> UserRoles { get; set; }
+        public ICollection<AddressModel> Addresses { get; set; }
+        public Guid? PrimaryAddressId { get; set; }
+        public AddressModel PrimaryAddress { get; set; }
 
         public UserModel(string firstName, string lastName, string phone, string email, string hashedPassword)
         {

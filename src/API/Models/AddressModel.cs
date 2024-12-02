@@ -5,13 +5,15 @@ namespace Kaya.src.API.Models
     public class AddressModel
     {
         public Guid Id { get; set; } = Guid.NewGuid();
+        public Guid UserId { get; set; }
+        public UserModel User { get; set; }
 
         [Required]
         [StringLength(200, ErrorMessage = "Street address cannot be longer than 200 characters.")]
         public string StreetAddress { get; set; }
 
         [Required]
-        [StringLength(100, ErrorMessage = "City cannot be longer than 200 characters.")]
+        [StringLength(100, ErrorMessage = "City cannot be longer than 100 characters.")]
         public string City { get; set; }
 
         [Required]
